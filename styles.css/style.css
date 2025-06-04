@@ -1,0 +1,82 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5e6cc;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #8b5e3c;
+  color: white;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Botón hamburguesa */
+.menu-btn {
+  background: none;
+  border: none;
+  font-size: 25px;
+  color: white;
+  cursor: pointer;
+  display: none;
+}
+
+/* Secciones */
+.seccion {
+  background-color: white;
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  animation: aparecer 1s ease-in;
+}
+
+/* Animación con keyframes */
+@keyframes aparecer {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive para menú móvil */
+@media (max-width: 600px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background-color: #8b5e3c;
+    padding: 10px;
+  }
+
+  .nav-links.mostrar {
+    display: flex;
+  }
+
+  .menu-btn {
+    display: block;
+  }
+}

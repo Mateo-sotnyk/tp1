@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portfolio Básico - Mateo</title>
+  <link rel="stylesheet" href="/styles.css/style.css" />
+</head>
+<body>
+
+  <header>
+    <nav class="navbar">
+      <div class="logo">Mateo</div>
+      <button class="menu-btn" onclick="toggleMenu()">☰</button>
+      <ul class="nav-links" id="menu">
+        <li><a href="#perfil">Perfil</a></li>
+        <li><a href="#sobremi">Sobre mí</a></li>
+        <li><a href="#habilidades">Habilidades</a></li>
+        <li><a href="#proyectos">Proyectos</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="perfil" class="seccion">
+      <h1>Mateo Sotnyk</h1>
+      <p>Desarrollador web en formación. Me gusta construir sitios web desde cero.</p>
+    </section>
+
+    <section id="sobremi" class="seccion">
+      <h2>Sobre mí</h2>
+      <p>Tengo 20 años, me gusta programar, jugar al fútbol y aprender cosas nuevas. Estoy estudiando desarrollo web full stack.</p>
+    </section>
+
+    <section id="habilidades" class="seccion">
+      <h2>Habilidades</h2>
+      <ul>
+        <li>HTML (básico)</li>
+        <li>CSS (básico)</li>
+        <li>C++ (intermedio)</li>
+        <li>Arduino (intermedio)</li>
+      </ul>
+    </section>
+
+    <section id="proyectos" class="seccion">
+      <h2>Proyectos</h2>
+      <p>Durante la secundaria realicé varios proyectos con Arduino y C++:</p>
+      <ol>
+        <li>Automatización de luces</li>
+        <li>Sensores de movimiento</li>
+        <li>Sistemas de seguridad simples</li>
+        <li>Gabinetes privados</li>
+      </ol>
+    </section>
+
+    <section id="contacto" class="seccion">
+      <h2>Contacto</h2>
+      <p>Podés contactarme por:</p>
+      <ul>
+        <li>Email: <a href="mailto:sotnykmateo@gmail.com">sotnykmateo@gmail.com</a></li>
+        <li>Instagram: <a href="https://www.instagram.com/mateestk" target="_blank">mateestk</a></li>
+        <li>GitHub: <a href="https://github.com/Mateo-sotnyk" target="_blank">Mateo-sotnyk</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById("menu");
+      menu.classList.toggle("mostrar");
+    }
+  </script>
+
+</body>
+</html>
